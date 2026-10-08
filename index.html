@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Gastos | Alessandra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Controle de Gastos</h1>
+
+    <div class="total">
+      <p>Total gasto</p>
+      <h2 id="total">R$ 0,00</h2>
+    </div>
+
+    <form id="form">
+      <input type="text" id="descricao" placeholder="Descrição (ex: Mercado)" required>
+      <input type="number" id="valor" placeholder="Valor (ex: 50.00)" step="0.01" required>
+      <select id="categoria">
+        <option value="Alimentação">Alimentação</option>
+        <option value="Transporte">Transporte</option>
+        <option value="Moradia">Moradia</option>
+        <option value="Lazer">Lazer</option>
+        <option value="Outros">Outros</option>
+      </select>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
